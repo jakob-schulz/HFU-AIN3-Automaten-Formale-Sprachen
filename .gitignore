@@ -1,3 +1,7 @@
 /notizen
 *.synctex.gz
 *.idea
+JFLAP7.1.jar
+*.gradle
+*build
+*gradle
