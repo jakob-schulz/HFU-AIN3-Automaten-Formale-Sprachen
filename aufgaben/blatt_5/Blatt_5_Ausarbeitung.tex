@@ -1,0 +1,70 @@
+\documentclass[a4paper,12pt,titlepage]{article}
+
+\usepackage[german,ngerman]{babel}
+\usepackage{fontspec}
+\setmainfont{Calibri}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{caption}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\LARGE\bfseries Automaten und formale Sprachen Blatt 5\par}
+    \vspace{2cm}
+    {\Large Jan Lucca Agricola (275867) \& Jakob Schulz (275258)\par}
+    \vspace{2cm}
+    {\large\today\par}
+\end{titlepage}
+
+\section{Aufgabe}
+$L(G) = \{ab, aba, abaa, abaaa, abaaaa,...\}$
+\section{Aufgabe}
+$\Sigma = \{a,b\}\\
+V = \{A,B, S\}\\
+P = \{S \rightarrow Sa, S \rightarrow Ab, A \rightarrow Ba, B \rightarrow \epsilon\}$
+\section{Aufgabe}
+$L(G) = \{b, ab, aab, aabb, aabbb, aaab, aaabb, aaabbb, aaabbbb, aaaab,...\}$
+\section{Aufgabe}
+Die Grammatik G ist nicht vom Typ-3, weil ein Nichtterminal zu einem Terminal und zwei Nichtterminalen abgeleitet werden kann $(S \rightarrow Sab)$\\
+\\
+Äquivalente Typ-3-Grammatik:\\
+$G' = (\{S, A, B, C\}, \{a, b\}, P', S)\\
+P' = \{S \rightarrow Ab, S \rightarrow Ba, A \rightarrow Sa, B \rightarrow Ca, C \rightarrow \epsilon\}
+$
+\section{Aufgabe}
+$G = (\{S, A, B\}, \{a, b\}, P, S)\\
+P = \{\\S \rightarrow Ab,\\ S \rightarrow Aa,\\ A \rightarrow Bb,\\ A \rightarrow Ba,\\ B \rightarrow Sb,\\ B \rightarrow Sa,\\ S \rightarrow \epsilon\\\}
+$
+\section{Aufgabe}
+\subsection{Blatt 3 Aufgabe 2}
+$G = (\{S, A, B, C, D\}, \{a, b\}, P, S)\\
+P = \{\\
+S \rightarrow Aa\\
+A \rightarrow Ba,\\
+A \rightarrow Bb,\\
+B \rightarrow Ca,\\
+B \rightarrow Da,\\
+B \rightarrow Db,\\
+D \rightarrow Aa,\\
+D \rightarrow Ab,\\
+C \rightarrow \epsilon\\
+\}$
+\subsection{Blatt 3 Aufgabe 3}
+$G = (\{S, A, B, C\}, \{a, b\}, P, S)\\
+P = \{\\
+S \rightarrow Aa,\\
+A \rightarrow Bb,\\
+B \rightarrow Ca,\\ 
+B \rightarrow Sa,\\
+C \rightarrow \epsilon\\
+\}$
+\section{Aufgabe}
+$G = (\{S, A, B, C\}, \{a, b\}, P, S)\\
+P = \{\\
+S \rightarrow S(S), \\
+S \rightarrow \epsilon\\
+\}
+\end{document}
